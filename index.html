@@ -1,0 +1,65 @@
+<!DOCTYPE html> <!--una declaración y se asegura de que el navegador intente cumplir las especificaciones de la industria.-->
+<html lang="en"> <!-- lang singespecifica que especifica que la pagina esa en ingles -->
+	<head>
+		<meta charset ="UTF-8"> <!--Indique al navegador que analice el marcado en varios idiomas-->
+		<title>CatPhotoApp</title>
+	</head>
+  <body><!--cuerpo -->
+    <main>
+      <h1>CatPhotoApp</h1><!-- titulo -->
+		<section><!--crea secciones -->
+			<h2>Cat Photos</h2>
+			<!-- TODO: add link to cat photos   // son comentarios
+			<p>see more cat photos in our gallery</p>  // la p es para parrafos-->
+			<p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p> <!--target crea una nueva pestaña -->
+			<a href ="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a> <!-- img es un atributo para poner una imagen siempre acompañado de href -->
+	  </section>
+				<section>
+					<h2>cat lists</h2>
+					<h3>things cats love:</h3>
+					<ul>
+						 <li>cat nip</li>
+						 <li>laser pointers</li>
+						 <li>lasagna</li>
+					</ul><!-- ul es para crear listas desordenadas y la etiqueta li para poner items --->
+						<figure>
+							<img src= "https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate."><!-- alt y src son atributos y siempre el valor va con comillas--->
+							 <figcaption >Cats <em>love</em> lasagna.</figcaption><!---em es un elemento de enfasis-->
+						</figure>
+						<h3>Top 3 things cats hate: </h3>
+						<ol><!-- la etiqueta ol crea listas ordenadas--->
+							<li>flea treatment</li>
+							<li>thunder</li>
+							<li>other cats</li>
+						</ol>
+						<figure>
+							 <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="five cats looking around a field">
+							 <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  <!-- la etiqueta strong sirve para indicar una parte del tecto es importante en este caso hate--->
+						</figure>
+				</section>
+					<section>
+						<h2>Cat form</h2>
+						 <form action="https://freecatphotoapp.com/submit-cat-photo">   
+							<fieldset>	
+								<legend>  Is your cat an indoor or outdoor cat? </legend> <!--crea una leyenda -->
+								<label> <input checked type="radio" id="indoor" name="indoor-outdoor" value = "indoor"> Indoor </label> <!--   label se utilizan para ayudar a asociar el texto a un elemento input con el propio elemento   el id es para identificar-->
+								<label><input id="outdoor" type="radio" name="indoor-outdoor" value = "outdoor"> Outdoor</label>
+							</fieldset>  <!--El elemento fieldset se utiliza para agrupar elementos input y label relacionados dentro de un formulario web --->
+							<fieldset>
+								<legend>What's your cat's personality?</legend>
+									<input checked id="loving" type="checkbox" name="personality" value="loving"> <label for="loving"> Loving</label>
+									<input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy"> Lazy</label>
+									<input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic"> Energetic</label>
+							</fieldset>
+						 <input type="text" name='catphotourl'placeholder ="cat photo url" required> <!-- action indica, dónde deben enviarse los datos del formulario. Por ejemplo, <form action="/submit-url"></form> le dice al navegador que los datos del formulario deben ser enviados a la ruta /submit-url.   y el elemento input te permite recolectar datos desde un formulario
+						 Luego el type es para crear cuadros de texto osea input box y el name es para ponerle un nombre   place es para poner un texto provisional    el required es para decirles que el formulario no puede estar vacio------>
+						 <button type="submit">Submit</button> <!-- crea un boton clickeable--->
+						</form><!-- Ahora añadirás un formulario web para recolectar información de los usuarios. com la etiqueta form--->
+					</section>
+	 </main>
+	     <footer><!-- pie de pagina--->
+			<p>No Copyright - <a href="https://www.freecodecamp.org"</a>freeCodeCamp.org</p>
+		 </footer>
+
+  </body>
+</html>
